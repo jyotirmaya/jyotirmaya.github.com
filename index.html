@@ -22,8 +22,9 @@
 	}
     </style>
 	<link href="css/bootstrap-responsive.css" rel="stylesheet">
-
-    <!-- Le HTML5 shim, for IE6-8 support of HTML5 elements -->
+	<link href="css/coin-slider-styles.css" rel="stylesheet">
+    
+	<!-- Le HTML5 shim, for IE6-8 support of HTML5 elements -->
     <!--[if lt IE 9]>
       <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
     <![endif]-->
@@ -45,7 +46,7 @@
 				  <li><a href="http://jyotirmaya.blogspot.com/p/disclaimer.html">Disclaimer</a></li>
                 </ul>
               </li>
-			  <li><a href="http://jyotirmaya.blogspot.com/p/publications.html">Academics</a></li>
+			  <li><a href="#academics">Academics</a></li>
 			  <li><a href="#photo">Photography</a></li>
 			  <li><a href="http://jyotirmaya.blogspot.com/">Blog</a></li>
             </ul>
@@ -60,9 +61,29 @@
 	<div class="container">
 		
 		<!-- Main hero unit for a primary marketing message or call to action -->
-		<div class="hero-unit">
-			<h1>{ Hello World }</h1>
-			<p>I am currently updating my website. Please visit my <a href="http://jyotirmaya.blogspot.com/">blog</a> while my website is being updated.</p>
+		<div class="row">
+			<div class="span12">
+				<div id="pictures">
+				<a href="#">
+					<img src="pics/jefferson_memorial.png" alt="Jefferson Memorial" />
+					<span>
+						<b>Jefferson Memorial, Washington, DC</b>
+					</span>
+				</a>
+				<a href="#">
+					<img src="pics/fl.png" alt="Key West, Florida" />
+					<span>
+						<b>Key West, Florida</b>
+					</span>
+				</a>
+				<a href="#">
+					<img src="pics/tear_drop.png" alt="Tear Drop" />
+					<span>
+						<b>Tear Drop 9/11 Monument, NJ</b><br/>
+					</span>
+				</a>
+				</div>
+			</div>
 		</div>
 		<!--/ hero unit -->
 		
@@ -108,5 +129,22 @@
 	<!-- Placed at the end of the document so the pages load faster -->
 	<script src="http://code.jquery.com/jquery-latest.js"></script>
     <script src="js/bootstrap.js"></script>
+	<script src="js/coin-slider.min.js"></script>
+	
+	<script>
+	$(document).ready(function() {
+		$('#pictures').coinslider({ 
+			hoverPause: true, 
+			width:1170,
+			height:350,
+			spw:7,
+			sph:5,
+			delay:3000,
+			sDelay:30,
+			opacity:0.7,
+			titleSpeed:500
+		});
+	});
+	</script>
   </body>
 </html>
