@@ -17,6 +17,26 @@
         margin: 0 auto;
         background-color: white;
 	}
+	
+	.greybackground {
+		/* IE10 Consumer Preview */ 
+		background-image: -ms-linear-gradient(bottom, #FFFFFF 0%, #EBEBEB 100%);
+
+		/* Mozilla Firefox */ 
+		background-image: -moz-linear-gradient(bottom, #FFFFFF 0%, #EBEBEB 100%);
+
+		/* Opera */ 
+		background-image: -o-linear-gradient(bottom, #FFFFFF 0%, #EBEBEB 100%);
+
+		/* Webkit (Safari/Chrome 10) */ 
+		background-image: -webkit-gradient(linear, left bottom, left top, color-stop(0, #FFFFFF), color-stop(1, #EBEBEB));
+
+		/* Webkit (Chrome 11+) */ 
+		background-image: -webkit-linear-gradient(bottom, #FFFFFF 0%, #EBEBEB 100%);
+
+		/* W3C Markup, IE10 Release Preview */ 
+		background-image: linear-gradient(to top, #FFFFFF 0%, #EBEBEB 100%);
+	}
     </style>
 	<link href="css/bootstrap-responsive.css" rel="stylesheet">
 	<link href="css/coin-slider-styles.css" rel="stylesheet">
@@ -40,118 +60,111 @@
 	<div class="container">
 		<!-- Main hero unit for a primary marketing message or call to action -->
 		<div class="row">
-			<div class="span12">
+			<div class="span8" style="background: #000;">
 				<div id="pictures">
 				<a href="#">
-					<img src="pics/ellis_island.jpg" alt="Ellis Island" />
+					<img src="pics/ellis_island.png" alt="Ellis Island" />
 					<span>
-						<b>Ellis Island, Upper New York Bay</b><br/>
+						Ellis Island, Upper New York Bay<br/>
 					</span>
 				</a>
 				<a href="#">
 					<img src="pics/jefferson_memorial.png" alt="Jefferson Memorial" />
 					<span>
-						<b>Jefferson Memorial, Washington, DC</b>
+						Jefferson Memorial, Washington, DC
 					</span>
 				</a>
 				<a href="#">
 					<img src="pics/fl.png" alt="Key West, Florida" />
 					<span>
-						<b>Key West, Florida</b>
+						Key West, Florida
 					</span>
 				</a>
 				<a href="#">
-					<img src="pics/tree.jpg" alt="TRee with Flower" />
+					<img src="pics/tree.png" alt="TRee with Flower" />
 				</a>
 				<a href="#">
 					<img src="pics/tear_drop.png" alt="Tear Drop" />
 					<span>
-						<b>Tear Drop 9/11 Monument, NJ</b><br/>
+						Tear Drop 9/11 Monument, NJ<br/>
 					</span>
 				</a>
 				<a href="#">
 					<img src="pics/flower.png" alt="Flower" />
 					<span>
-						<b>Flower Garden, Washington, DC</b><br/>
+						Flower Garden, Washington, DC<br/>
 					</span>
 				</a>
 				<a href="#">
-					<img src="pics/sfo.jpg" alt="San Francisco" />
+					<img src="pics/sfo.png" alt="San Francisco" />
 					<span>
-						<b>San Francisco, CA</b><br/>
+						San Francisco, CA<br/>
 					</span>
-				</a>
-				<a href="#">
-					<img src="pics/fish.jpg" alt="Fish" />
 				</a>
 				<a href="#">
 					<img src="pics/snow.png" alt="Snow" />
 					<span>
-						<b>Snow Fall in State College, PA</b><br/>
+						Snow Fall in State College, PA<br/>
 					</span>
 				</a>
 				</div>
 			</div>
+			<div class="span4 greybackground">
+			<table class="table table-bordered table-hover">
+				<tr>
+					<td colspan="2">
+						<h4>My Selected Blog Posts</h4>
+					</td>
+				</tr>
+				<tr>
+					<td width="5%">1</td>
+					<td><a href="http://jyotirmaya.blogspot.com/2010/12/couchdb-getting-started-with-couchdb.html">Getting Started with CouchDB on Windows</a></td>
+				</tr>
+				<tr>
+					<td width="5%">2</td>
+					<td><a href="http://jyotirmaya.blogspot.com/2008/11/xampp-python-django.html">XAMPP + Python + Django</a></td>
+				</tr>
+				<tr>
+					<td width="5%">3</td>
+					<td><a href="http://jyotirmaya.blogspot.com/2008/03/google-map-files-kml-icon.html">Google Map Files KML Icon</a></td>
+				</tr>
+				<tr>
+					<td width="5%">4</td>
+					<td><a href="http://jyotirmaya.blogspot.com/2007/04/copy-data-between-sql-express-databases.html">Copy Data between SQL Express Database(s)</a></td>
+				</tr>
+				<tr>
+					<td width="5%">5</td>
+					<td><a href="http://jyotirmaya.blogspot.com/2007/03/aspnet-database-connectivity.html">ASP.NET Database Connectivity</a><br/>&nbsp;</td>
+				</tr>
+			</table>
+			</div>
 		</div>
 		<!--/ hero unit -->
-	
-	<div class="row">
-        <div class="span12">
-		<h4>My Selected Blog Posts</h4>
-		<table class="table table-bordered table-hover">
-			<tr>
-				<td width="5%"><strong>No</strong></td>
-				<td><strong>Title</strong></td>
-				<td width="15%"><strong>Published On</strong></td>
-			</tr>
-			<tr>
-				<td width="5%">1</td>
-				<td><a href="http://jyotirmaya.blogspot.com/2010/12/couchdb-getting-started-with-couchdb.html">Getting Started with CouchDB on Windows</a></td>
-				<td width="15%">DEC 28, 2010</td>
-			</tr>
-			<tr>
-				<td width="5%">2</td>
-				<td><a href="http://jyotirmaya.blogspot.com/2008/11/xampp-python-django.html">XAMPP + Python + Django</a></td>
-				<td width="15%">NOV 09, 2008</td>
-			</tr>
-			<tr>
-				<td width="5%">3</td>
-				<td><a href="http://jyotirmaya.blogspot.com/2008/03/google-map-files-kml-icon.html">Google Map Files KML Icon</a></td>
-				<td width="15%">MAR 10, 2008</td>
-			</tr>
-			<tr>
-				<td width="5%">4</td>
-				<td><a href="http://jyotirmaya.blogspot.com/2007/04/copy-data-between-sql-express-databases.html">Copy Data between SQL Express Database(s)</a></td>
-				<td width="15%">APR 17, 2007</td>
-			</tr>
-		</table>
+
+		<!-- row of columns -->
+		<div class="row">
+			<div class="span3">
+				<h2>About</h2>
+				<p>This is my personal website. The views expressed on this website, be they in text, pictures or sound, are my own and do not necessarily state or reflect the views of my business, university, employer or collegues.</p>
+				<!-- <p><a class="btn" href="#">View details &raquo;</a></p> -->
+			</div>
+			<div class="span3">
+				<h2>Academics</h2>
+				<p>I completed my Ph.D. in <a href="http://www.ie.psu.edu">Industrial Engineering</a> with a minor in <a href="http://www.csci.psu.edu/stulistHPC.html">High Performance Computing</a> from <a href="http://www.psu.edu">Pennsylvania State University</a>. I did my Ph.D. work with <a href="http://www.mne.psu.edu/Directories/Faculty/Simpson-T.html">Dr. Timothy Simpson</a> in the <a href="http://edog.mne.psu.edu/">Engineering Design and Optimization Group</a> at Penn State.</p>
+				<p><a class="btn" href="http://jyotirmaya.blogspot.com/p/publications.html">View my Publications &raquo;</a></p>
+			</div>
+			<div class="span3">
+				<h2>Photography</h2>
+				<p>Photography is my hobby. This section will contain some of my photographs and articles related to taking pictures. The above pictures were taken by me.</p>
+				<!-- <p><a class="btn" href="#">View details &raquo;</a></p> -->
+			</div>
+			<div class="span3">
+				<h2>Blog</h2>
+				<p>I occasionally write blog posts.</p>
+				<p><a class="btn" href="http://jyotirmaya.blogspot.com/">Visit Blog &raquo;</a></p>
+			</div>
 		</div>
-	</div>
-	
-	<!-- row of columns -->
-    <div class="row">
-        <div class="span3">
-			<h2>About</h2>
-			<p>This is my personal website. The views expressed on this website, be they in text, pictures or sound, are my own and do not necessarily state or reflect the views of my business, university, employer or collegues.</p>
-			<!-- <p><a class="btn" href="#">View details &raquo;</a></p> -->
-        </div>
-        <div class="span3">
-			<h2>Academics</h2>
-			<p>I completed my Ph.D. in <a href="http://www.ie.psu.edu">Industrial Engineering</a> with a minor in <a href="http://www.csci.psu.edu/stulistHPC.html">High Performance Computing</a> from <a href="http://www.psu.edu">Pennsylvania State University</a>. I did my Ph.D. work with <a href="http://www.mne.psu.edu/Directories/Faculty/Simpson-T.html">Dr. Timothy Simpson</a> in the <a href="http://edog.mne.psu.edu/">Engineering Design and Optimization Group</a> at Penn State.</p>
-			<p><a class="btn" href="http://jyotirmaya.blogspot.com/p/publications.html">View my Publications &raquo;</a></p>
-		</div>
-		<div class="span3">
-			<h2>Photography</h2>
-			<p>Photography is my hobby. This section will contain some of my photographs and articles related to taking pictures. The above pictures were taken by me.</p>
-			<!-- <p><a class="btn" href="#">View details &raquo;</a></p> -->
-		</div>
-		<div class="span3">
-			<h2>Blog</h2>
-			<p>I occasionally write blog posts.</p>
-			<p><a class="btn" href="http://jyotirmaya.blogspot.com/">Visit Blog &raquo;</a></p>
-		</div>
-	</div>
-	<!-- /row of columns -->	
+		<!-- /row of columns -->	
 
 	<!-- footer -->
 	<div id="footer">
@@ -210,8 +223,8 @@
 	
 		$('#pictures').coinslider({ 
 			hoverPause: true, 
-			width:1170,
-			height:350,
+			width:770,
+			height:230,
 			spw:7,
 			sph:5,
 			delay:3000,
