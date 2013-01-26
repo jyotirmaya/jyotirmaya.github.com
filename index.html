@@ -41,7 +41,8 @@
     </style>
 	<link href="css/bootstrap-responsive.css" rel="stylesheet">
 	<link href="css/coin-slider-styles.css" rel="stylesheet">
-    
+    <link href="css/FeedEk.css" rel="stylesheet">
+	
 	<!-- Le HTML5 shim, for IE6-8 support of HTML5 elements -->
     <!--[if lt IE 9]>
       <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
@@ -170,7 +171,28 @@
 			</div>
 		</div>
 		<!-- /row of columns -->	
-
+		
+		<div class="row">
+			<div class="span12">
+				<h3>Recently Scooped...</h3>
+				<ul class="nav nav-tabs" id="myTab">
+					<li class="active"><a href="#home">Big Data</a></li>
+					<li><a href="#profile">Semantic Web</a></li>
+				</ul>
+ 
+				<div class="tab-content">
+					<div class="tab-pane active" id="home">
+						<div id="divBigData">
+						</div>
+					</div>
+					<div class="tab-pane" id="profile">
+						<div id="divSemantic">
+						</div>
+					</div>
+				</div>
+				
+			</div>
+		</div>
 	<!-- footer -->
 	<div id="footer">
 		<div id="loading" style="margin-top:20px;margin-left:20px;"><img src="img/loading.gif"/> Loading...</div>
@@ -188,6 +210,7 @@
 	<script src="http://code.jquery.com/jquery-latest.js"></script>
     <script src="js/bootstrap.js"></script>
 	<script src="js/coin-slider.min.js"></script>
+	<script src="js/FeedEk.js"></script>
 	
 	<script>
 	$(document).ready(function() {
@@ -236,6 +259,25 @@
 			sDelay:30,
 			opacity:0.7,
 			titleSpeed:500
+		});
+		
+		$('#divBigData').FeedEk({
+			FeedUrl : 'http://www.scoop.it/t/big-data-engineering/rss.xml',
+			MaxCount : 10,
+			ShowDesc : false,
+			ShowPubDate:true
+		});
+		
+		$('#divSemantic').FeedEk({
+			FeedUrl : 'http://www.scoop.it/t/semantic/rss.xml',
+			MaxCount : 10,
+			ShowDesc : false,
+			ShowPubDate:true
+		});
+		
+		$('#myTab a').click(function (e) {
+			e.preventDefault();
+			$(this).tab('show');
 		});
 		
 		$('#mainmenu').load("mainmenu.html");
