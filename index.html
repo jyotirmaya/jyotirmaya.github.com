@@ -177,12 +177,17 @@
 				<h3>Recently Scooped...</h3>
 				<ul class="nav nav-tabs" id="myTab">
 					<li class="active"><a href="#home">Big Data</a></li>
+					<li><a href="#nlp">Natural Language Processing</a></li>
 					<li><a href="#profile">Semantic Web</a></li>
 				</ul>
  
 				<div class="tab-content">
 					<div class="tab-pane active" id="home">
 						<div id="divBigData">
+						</div>
+					</div>
+					<div class="tab-pane" id="nlp">
+						<div id="divNLP">
 						</div>
 					</div>
 					<div class="tab-pane" id="profile">
@@ -263,14 +268,21 @@
 		
 		$('#divBigData').FeedEk({
 			FeedUrl : 'http://www.scoop.it/t/big-data-engineering/rss.xml',
-			MaxCount : 10,
+			MaxCount : 20,
+			ShowDesc : false,
+			ShowPubDate:true
+		});
+		
+		$('#divNLP').FeedEk({
+			FeedUrl : 'http://www.scoop.it/t/natural-language-understanding/rss.xml',
+			MaxCount : 20,
 			ShowDesc : false,
 			ShowPubDate:true
 		});
 		
 		$('#divSemantic').FeedEk({
 			FeedUrl : 'http://www.scoop.it/t/semantic/rss.xml',
-			MaxCount : 10,
+			MaxCount : 20,
 			ShowDesc : false,
 			ShowPubDate:true
 		});
